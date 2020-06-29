@@ -166,7 +166,13 @@
 	  <artifactId>ibm-watson</artifactId>
 	  <version>8.4.0</version>
 	</dependency>
-	
+	<!-- https://mvnrepository.com/artifact/net.wasdev.wlp.maven.plugins/liberty-maven-plugin -->
+	<dependency>
+	    <groupId>net.wasdev.wlp.maven.plugins</groupId>
+	    <artifactId>liberty-maven-plugin</artifactId>
+	    <version>3.0.M1</version>
+	</dependency>
+
   </dependencies>
   <build>
     <testSourceDirectory>src/main/test</testSourceDirectory>
@@ -185,6 +191,14 @@
       </resource>
     </resources>
     <plugins>
+
+    <plugin>
+            <groupId>net.wasdev.wlp.maven.plugins</groupId>
+            <artifactId>liberty-maven-plugin</artifactId> 
+            <version>1.2.1</version>
+    </plugin>
+
+
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
